@@ -14,11 +14,11 @@ export class App extends Component {
     ],
     filter: '',
   };
-  componentDidMounth() {
+  componentDidMount() {
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
     
-    //   this.setTimeout(this.setState({ contacts: parsedContacts }),2000);
+    this.setState({ contacts: parsedContacts });
    
     console.log('contacts',contacts)
   }
